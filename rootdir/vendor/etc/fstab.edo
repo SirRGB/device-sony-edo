@@ -25,9 +25,8 @@ vendor                                     /vendor                 ext4    ro,ba
 /dev/block/bootdevice/by-name/mdm1m9kefs2  /modem_fs2              emmc    defaults                                                              defaults
 
 #ZRAM/SWAP
-/dev/block/zram0                           none                    swap    defaults                                                              zramsize=1073741824,max_comp_streams=8
+/dev/block/zram0                           none                    swap    defaults                                                              zramsize=1073741824
 
 # External Devices
 /devices/platform/soc/8804000.sdhci/mmc_host/mmc*     auto         auto    nosuid,nodev                                                          voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*   auto       auto    defaults                                                              voldmanaged=usb:auto
-
